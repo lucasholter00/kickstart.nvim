@@ -75,7 +75,7 @@ require('lazy').setup({
   -- Surround plugin
   'tpope/vim-surround',
 
-  -- Detect tabstop and shiftwidth automatically
+  -- -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
 
   -- NOTE: This is where your plugins related to LSP can be installed.
