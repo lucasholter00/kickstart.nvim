@@ -229,7 +229,7 @@ require('lazy').setup({
 
   { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
   { "nyoom-engineering/oxocarbon.nvim"},
-  { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true},
+  { "sainnhe/gruvbox-material", priority = 1000 , config = true},
 
   {
     "scottmckendry/cyberdream.nvim",
