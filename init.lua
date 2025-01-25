@@ -242,8 +242,10 @@ require('lazy').setup({
             italic_comments = true,
             hide_fillchars = true,
             borderless_telescope = true,
+            theme = {
+                variant = "light"
+            }
         })
-        vim.cmd("colorscheme cyberdream") -- set the colorscheme
     end,
   },
 

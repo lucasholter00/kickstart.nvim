@@ -3,7 +3,7 @@ return {
   'nvim-lualine/lualine.nvim',
   -- See `:help lualine.txt`
   opts = function ()
-    local cyberdream = require("lualine.themes.cyberdream")
+    local cyberdream = require("lualine.themes.gruvbox-material")
     return{
       options = {
         icons_enabled = false,

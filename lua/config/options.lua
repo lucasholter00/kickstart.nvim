@@ -6,9 +6,9 @@
 -- vim.cmd[[colorscheme tokyonight]]
 -- vim.cmd.colorscheme "catppuccin"
 -- vim.opt.background = "dark"
--- vim.cmd([[colorscheme gruvbox]])
+vim.cmd([[colorscheme gruvbox-material]])
 -- vim.cmd.colorscheme "oxocarbon"
-vim.cmd.colorscheme "cyberdream"
+-- vim.cmd.colorscheme "cyberdream"
 
 -- Set highlight on search
 vim.o.hlsearch = true
@@ -45,6 +45,12 @@ vim.o.timeoutlen = 300
 
 vim.o.tabstop = 4
 vim.o.shiftwidth = 0
+
+-- Set expandtab for Haskell files in Neovim using Lua
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "haskell",  -- Filetype to target (can use multiple like {"haskell", "python"})
+  command = "setlocal expandtab",  -- Command to run for matching filetypes
+})
 
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noselect'
